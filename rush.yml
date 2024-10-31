@@ -1,0 +1,38 @@
+# For a detailed info on this file and supported fields, check out the below link:
+# https://github.com/ShreyashSaitwal/rush-cli/wiki/Metadata-File
+
+---
+name: DeepLink
+description: This extension allows you to implements deep links in your application, you can generate this extension for your custom URL in a single click <a href="https://play.google.com/store/apps/details?id=com.sumit.store" target ="_blank">here</a>. <br> Developed By <a href="https://community.kodular.io/u/sumit1334/" target ="_blank">Sumit</a> with <a href="https://community.kodular.io/t/rush-a-new-and-improved-way-of-building-extensions/111470?u=sumit1334" target="_blank">Rush</a>
+
+version:
+  number: auto
+  name: '1'
+
+authors:
+  - Sumit
+
+build:
+  release:
+    # Optimizes the extension on every release build.
+    optimize: true
+
+  # If enabled, you will be able to use Java 8 language features in your extension.
+  desugar:
+    enable: false
+    desugar_deps: false
+
+assets:
+  # Extension icon. This can be a URL or a local image in 'assets' folder.
+  icon: icon.png
+
+  # Extension assets.
+  # other:
+  #   - my_awesome_asset.anything
+
+# Extension dependencies (JAR).
+# deps:
+#   - my_awesome_library.jar
+
+#deps:
+#  - verification.jar

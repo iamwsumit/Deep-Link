@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sumit.deeplink">
+    <application>
+        <activity
+                android:name="com.sumit.deeplink.DeepLink$DeepLinkActivity"
+                android:exported="true">
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:scheme="https"
+                        android:host="www.yourwebsite.com"
+                        android:pathPrefix="/"/>
+                <data
+                        android:scheme="https"
+                        android:host="yourwebsite.com"
+                        android:pathPrefix="/"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
